@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    align-items: center;
+    padding: 0 9%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+
+nav .navFull {
+    position: relative;
+    height: 100%;
+    list-style-type: none;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navFull li {
+    height: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+nav .navFull li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    font-size: 104%;
+}
+
+nav .navFull li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    left: -100%;
+    transition: .2s;
+}
+
+nav .navFull li a:hover::after {
+    left: 0;
+}
+
+
+
+nav .navFull .signUp,
+#side {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(201, 195, 195);
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav .navFull .signUp {
+    height: fit-content;
+    margin-left: 10px;
+}
+
+nav .navFull .signUp:hover,
+#side:hover {
+    background-color: white;
+    color: black;
+}
+
+.ss {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sideBar {
+    position: fixed;
+    width: 50%;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 100vh;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.Off {
+    right: -100%;
+    opacity: 0;
+}
+
+.sideBar .closer {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: white;
+}
+
+.sideBar .side {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBar .side .sideOne {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    transition: .2s;
+}
+
+.sideBar .side .sideOne:hover {
+    background-color: rgb(68, 68, 68);
+}
+
+.sideBar .side #side {
+    margin-top: 30px;
+}
+
+.sideBar a {
+    color: white;
+    text-decoration: none;
+}

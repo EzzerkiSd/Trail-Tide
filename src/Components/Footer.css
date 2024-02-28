@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    color: white;
+    position: relative;
+    padding: 20px 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer h3{
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer .subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer .subscribe input{
+    height: 37px;
+    width: 200px;
+    padding: 5px 10px;
+    outline: none;
+}
+.footer .info{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+.lastThing{
+    color: white;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 20px;
+    padding-top: 40px;
+}
+.lastThing .logo {
+    font-size: 29px;
+    font-weight: bolder;
+}
+.lastThing .logo a {
+    color: white;
+    text-decoration: none;
+}
+.lastThing .copyright{
+    font-size: 14px;
+}
+.lastThing .iconed-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.lastThing .iconed-links a{
+    color: white;
+    font-size: 18px;
+}
+.lastThing .iconed-links .fb:hover, .lastThing .iconed-links .insta:hover, .lastThing .iconed-links .yt:hover, .lastThing .iconed-links .tw:hover, .lastThing .iconed-links .in:hover{
+    transition: .2s;
+}
+.lastThing .iconed-links .fb:hover{
+    color: #4267B2;
+}
+.lastThing .iconed-links .insta:hover{
+    color: rgb(250, 4, 156);
+}
+.lastThing .iconed-links .yt:hover{
+    color: #FF0000;
+}
+.lastThing .iconed-links .tw:hover{
+    color: #00ACEE;
+}
+.lastThing .iconed-links .in:hover{
+    color: #0A66C2;
+}

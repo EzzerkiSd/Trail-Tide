@@ -1,0 +1,21 @@
+.check{
+    padding: 20px 10%;
+    background-color: white;
+}
+.check .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.check .content, .check .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.check .content{
+    margin-bottom: 30px;
+    flex: .5;
+}

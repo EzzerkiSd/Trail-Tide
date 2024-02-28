@@ -1,0 +1,10 @@
+.crd{
+    flex: 1;
+}
+.crd ul{
+    list-style-type: none;
+}
+.crd ul li a{
+    color: white;
+    text-decoration: none;
+}
